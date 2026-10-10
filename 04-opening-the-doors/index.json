@@ -1,0 +1,49 @@
+{
+  "title": "Module 4 - Opening the Doors",
+  "description": "Expose your app with a Kubernetes Service.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Deploy the app",
+        "text": "step1.md"
+      },
+      {
+        "title": "Create a Service",
+        "text": "step2.md"
+      },
+      {
+        "title": "Call the app",
+        "text": "step3.md"
+      },
+      {
+        "title": "Open in the browser",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "deployment.yaml",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "service.yaml.solution",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  },
+  "difficulty": "beginner",
+  "time": "15 minutes"
+}

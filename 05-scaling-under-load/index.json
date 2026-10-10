@@ -1,0 +1,49 @@
+{
+  "title": "Module 5 - Scaling Under Load",
+  "description": "Scale out and watch load balancing.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Start small",
+        "text": "step1.md"
+      },
+      {
+        "title": "Traffic spike",
+        "text": "step2.md"
+      },
+      {
+        "title": "Scale out",
+        "text": "step3.md"
+      },
+      {
+        "title": "See the load balancing",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "deployment.yaml",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "service.yaml",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "kubernetes-kubeadm-2nodes"
+  },
+  "difficulty": "beginner",
+  "time": "15 minutes"
+}

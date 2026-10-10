@@ -1,0 +1,50 @@
+{
+  "title": "Module 1 - It Works on My Machine",
+  "description": "Package an app with a Dockerfile and run it as a container.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Meet the app",
+        "text": "step1.md"
+      },
+      {
+        "title": "Write a Dockerfile",
+        "text": "step2.md"
+      },
+      {
+        "title": "Build and run",
+        "text": "step3.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "Dockerfile.solution",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "app.js",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "package.json",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "difficulty": "beginner",
+  "time": "15 minutes"
+}

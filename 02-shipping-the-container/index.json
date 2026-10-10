@@ -1,0 +1,54 @@
+{
+  "title": "Module 2 - Shipping the Container",
+  "description": "Push an image to a registry and run it from there.",
+  "details": {
+    "intro": {
+      "text": "intro.md"
+    },
+    "steps": [
+      {
+        "title": "Build the image",
+        "text": "step1.md"
+      },
+      {
+        "title": "Start a registry",
+        "text": "step2.md"
+      },
+      {
+        "title": "Tag and push",
+        "text": "step3.md"
+      },
+      {
+        "title": "Pull and run",
+        "text": "step4.md"
+      }
+    ],
+    "finish": {
+      "text": "finish.md"
+    },
+    "assets": {
+      "host01": [
+        {
+          "file": "Dockerfile",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "app.js",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "package.json",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        }
+      ]
+    }
+  },
+  "backend": {
+    "imageid": "ubuntu"
+  },
+  "difficulty": "beginner",
+  "time": "15 minutes"
+}
