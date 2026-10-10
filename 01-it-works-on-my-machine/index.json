@@ -8,15 +8,22 @@
     "steps": [
       {
         "title": "Meet the app",
-        "text": "step1.md"
+        "text": "step1/text.md"
       },
       {
         "title": "Write a Dockerfile",
-        "text": "step2.md"
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       },
       {
-        "title": "Build and run",
-        "text": "step3.md"
+        "title": "Build the image",
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
+      },
+      {
+        "title": "Run a container",
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
       }
     ],
     "finish": {

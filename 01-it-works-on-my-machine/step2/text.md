@@ -41,3 +41,5 @@ cat Dockerfile
 | `CMD` | What to run when the container starts |
 
 > 💡 Stuck? A ready-made copy is in `Dockerfile.solution`: `cp Dockerfile.solution Dockerfile`
+
+When you're done, click **Check** ✅ to confirm the Dockerfile exists.
