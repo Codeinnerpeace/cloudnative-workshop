@@ -1,13 +1,19 @@
 # 🎉 Workshop complete!
 
-You took an app through its whole journey:
+An app, written once, took this journey:
 
-1. **Packaged** it with a Dockerfile
-2. **Shipped** it through a registry
-3. **Orchestrated** it with a Kubernetes Deployment
-4. **Exposed** it with a Service
-5. **Scaled** it to handle load
+| Step | What you did | Proved |
+|---|---|---|
+| 1. Package | Dockerfile → image → container | Runs with no Node.js installed |
+| 2. Ship | Registry + CI/CD pipeline | Runs from a registry, like a new machine |
+| 3. Orchestrate | Kubernetes Deployment | Runs on a cluster and heals itself |
+| 4. Expose | Service | Reachable from a browser |
+| 5. Scale | `kubectl scale` | Handles load across 5 Pods |
 
-That's what happens after you write the code. 🚀
+## The takeaway 🎯
 
-**Where next?** Look into Helm, Ingress, autoscaling (HorizontalPodAutoscaler), and CI/CD pipelines.
+> **It shouldn't just work on *my* machine. It should work on *all* of them.**
+
+Whether you or an AI wrote the code, a Dockerfile, a registry and Kubernetes are what make it run the same way anywhere.
+
+**Where next?** Helm, Ingress, autoscaling (HorizontalPodAutoscaler), health checks, and writing your own CI pipeline.

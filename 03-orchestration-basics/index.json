@@ -7,16 +7,19 @@
     },
     "steps": [
       {
-        "title": "Why orchestration",
-        "text": "step1.md"
+        "title": "Check the cluster",
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
       },
       {
         "title": "Deploy to Kubernetes",
-        "text": "step2.md"
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       },
       {
         "title": "Kill a Pod",
-        "text": "step3.md"
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       }
     ],
     "finish": {

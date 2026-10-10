@@ -1,10 +1,12 @@
 # 🎉 Module 3 complete!
 
-You deployed an app with a Deployment and watched Kubernetes self-heal.
+| Term | Meaning |
+|---|---|
+| **Cluster / Node** | a group of machines / one machine in it |
+| **Pod** | a running copy of your app |
+| **Deployment** | "keep N Pods running" |
+| **Desired state** | you declare it, Kubernetes enforces it |
 
-**Key ideas**
-- **Desired state**: you declare it, Kubernetes enforces it
-- **Deployment**: keeps the right number of Pods running
-- **Self-healing**: deleted or crashed Pods are replaced automatically
+✅ **Works everywhere, check 3:** the same image now runs on a Kubernetes cluster, and heals itself when Pods die.
 
 **Next:** Module 4. Your app is running, but how do users reach it?

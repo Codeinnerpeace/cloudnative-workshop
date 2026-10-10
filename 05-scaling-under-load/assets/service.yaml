@@ -7,6 +7,6 @@ spec:
   selector:
     app: my-app        # send traffic to Pods with this label
   ports:
-    - port: 80         # port of the Service inside the cluster
-      targetPort: 80   # port the container listens on
+    - port: 80         # port of the Service
+      targetPort: 3000 # port the app listens on
       nodePort: 30080  # port opened on every node

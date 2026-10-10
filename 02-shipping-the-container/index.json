@@ -8,19 +8,27 @@
     "steps": [
       {
         "title": "Build the image",
-        "text": "step1.md"
+        "text": "step1/text.md",
+        "verify": "step1/verify.sh"
       },
       {
         "title": "Start a registry",
-        "text": "step2.md"
+        "text": "step2/text.md",
+        "verify": "step2/verify.sh"
       },
       {
         "title": "Tag and push",
-        "text": "step3.md"
+        "text": "step3/text.md",
+        "verify": "step3/verify.sh"
       },
       {
         "title": "Pull and run",
-        "text": "step4.md"
+        "text": "step4/text.md",
+        "verify": "step4/verify.sh"
+      },
+      {
+        "title": "Automate it (CI/CD)",
+        "text": "step5/text.md"
       }
     ],
     "finish": {
@@ -35,6 +43,11 @@
         },
         {
           "file": "app.js",
+          "target": "/root/workshop",
+          "chmod": "+r"
+        },
+        {
+          "file": "build-image.yml",
           "target": "/root/workshop",
           "chmod": "+r"
         },

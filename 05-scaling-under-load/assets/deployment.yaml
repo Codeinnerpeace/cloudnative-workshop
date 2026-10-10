@@ -1,4 +1,4 @@
-# Desired state: "I want 1 copy/copies of my-app running, always."
+# Desired state: "I want 1 copy of my-app running, always."
 apiVersion: apps/v1
 kind: Deployment
 metadata:
@@ -15,22 +15,6 @@ spec:
     spec:
       containers:
         - name: my-app
-          # traefik/whoami is a tiny public web server that prints the
-          # name of the Pod that served the request. Perfect for demos!
-          image: traefik/whoami:v1.10.1
+          image: ghcr.io/codeinnerpeace/my-app:1.0
           ports:
-            - containerPort: 80
-          # Kubernetes restarts the container if this check keeps failing
-          livenessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 3
-            periodSeconds: 5
-          # Kubernetes only sends traffic once this check passes
-          readinessProbe:
-            httpGet:
-              path: /
-              port: 80
-            initialDelaySeconds: 1
-            periodSeconds: 3
+            - containerPort: 3000

@@ -1,14 +1,22 @@
 # Module 1: It Works on My Machine 🖥️
 
-*"But it works on my machine!"* — every developer, ever.
+Imagine an AI wrote you a small web app in five minutes. You run it on your laptop and it works. ✨
 
-Your app runs perfectly on your laptop, then breaks on a teammate's laptop or on a server. Why? Because of different operating systems, different versions of Node.js or Python, and different installed libraries.
+Then you send it to a teammate, or a server, and it breaks. Different operating system, different Node.js version, a missing library.
 
-**Containers** fix this by packaging your app *together with everything it needs*.
+> **Code that runs is not the same as code that runs *everywhere*.**
+> This workshop is about everything that happens after you (or an AI) write the code.
 
-In this module you will:
-1. Look at a small Node.js app
-2. Write a **Dockerfile** (the recipe for a container image)
-3. **Build** an image and **run** it as a container
+## The mental model for the whole workshop 📦
 
-No prior Docker experience needed. Click the grey commands to run them. 🚀
+Think of shipping goods around the world:
+
+| Real world | Software | You'll meet it in |
+|---|---|---|
+| Recipe / packing list | **Dockerfile** | Module 1 |
+| Sealed, packed box | **Image** | Module 1 |
+| Box opened and in use | **Container** | Module 1 |
+| Warehouse | **Registry** | Module 2 |
+| Logistics manager | **Kubernetes** | Modules 3–5 |
+
+In this module you'll write a Dockerfile, build an image, and run it as a container on a machine that has **no Node.js installed**. No Docker experience needed. Click the grey commands to run them. 🚀

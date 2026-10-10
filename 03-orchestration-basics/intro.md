@@ -1,11 +1,15 @@
 # Module 3: Orchestration Basics ☸️
 
-Running one container with `docker run` is easy. In production, things get harder:
+Running one container with `docker run` is easy. In production:
 
-- What if the container crashes at 3 a.m.?
-- What if the server it runs on dies?
-- How do you run several copies and update them safely?
+- What if it crashes at 3 a.m.?
+- What if the machine it runs on dies?
+- What if you need ten copies?
 
-**Kubernetes** is a container *orchestrator*. You tell it the **desired state** ("I want 2 copies of my app running"), and it works continuously to make reality match.
+With plain Docker, a human has to notice and fix each of those. 😴
 
-> ⏳ The cluster takes a minute to start. Wait for the terminal to be ready.
+**Kubernetes** (the logistics manager) is a container *orchestrator*. You declare the **desired state** ("keep 2 copies of my app running") and it works nonstop to make reality match.
+
+Here it runs **the same app image** you built, pulled from `ghcr.io`.
+
+> ⏳ The cluster takes a minute to start. Wait for the terminal.

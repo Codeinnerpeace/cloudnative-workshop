@@ -1,10 +1,13 @@
 # 🎉 Module 1 complete!
 
-You wrote a Dockerfile, built an image, and ran a container. The same image runs identically on any machine with Docker.
+The app ran on a machine with **no Node.js**, because the container brought everything it needs.
 
-**Key ideas**
-- **Dockerfile**: the recipe
-- **Image**: the packaged result
-- **Container**: a running instance of an image
+| Term | Meaning |
+|---|---|
+| **Dockerfile** | the recipe |
+| **Image** | the packaged result |
+| **Container** | a running copy of an image |
 
-**Next:** Module 2, where you'll learn how to *ship* this image to other machines.
+✅ **Works everywhere, check 1:** the app runs inside a container, on a machine that never installed Node.js.
+
+**Next:** Module 2. Your image lives on this one machine. How do you get it somewhere else?
